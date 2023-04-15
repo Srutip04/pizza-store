@@ -1,8 +1,9 @@
-import React from 'react'
+import React,{useState} from 'react'
 
-const Pizza = () => {
+
+const Pizza = ({pizza}) => {
   return (
-    <div>Pizza</div>
+   
   )
 }
 
