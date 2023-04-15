@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { Cart, Main } from "./pages";
-import Header from "./components/Header/Header";
+import { Header,Footer } from "./components";
 import "./App.css";
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
