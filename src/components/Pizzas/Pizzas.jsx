@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchPizzas } from "../../store/pizzas/pizza.action";
+import Pizza from "../Pizza/Pizza";
 
 const Pizzas = () => {
     const { pizzaState: { pizzas, error } } = useSelector(state => state);
@@ -40,8 +41,8 @@ const Pizzas = () => {
         </select>
         <div className="all-pizzas">
           {  error === "" ? (
-            pizzas
-              .filter((pizza) => {
+            pizzas ?.
+              filter((pizza) => {
                 return filterArg === ""
                   ? pizza
                   : filterArg === "veg"
